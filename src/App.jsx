@@ -3,6 +3,7 @@ import { supabase } from "./supabaseClient"
 import Login from "./Login"
 import Register from "./Register"
 import Home from "./Home"
+import "./App.css"
 
 function App() {
     const [user, setUser] = useState(null)

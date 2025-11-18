@@ -6,17 +6,18 @@ export default function Login({ onLogin, showRegister }) {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [loading, setLoading] = useState(false)
+    const [errorMessage, setErrorMessage] = useState("") // <-- nieuwe state
 
-    // Login functie
     const signIn = async () => {
         setLoading(true)
+        setErrorMessage("") // reset foutmelding
         const { data, error } = await supabase.auth.signInWithPassword({
             email,
             password,
         })
         setLoading(false)
 
-        if (error) alert(error.message)
+        if (error) setErrorMessage(error.message) // toon fout in de app
         else onLogin(data.user)
     }
 
@@ -36,6 +37,7 @@ export default function Login({ onLogin, showRegister }) {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
+                {errorMessage && <div className="error-message">{errorMessage}</div>}
                 <button onClick={signIn} disabled={loading}>
                     {loading ? "Even wachten..." : "Inloggen"}
                 </button>
