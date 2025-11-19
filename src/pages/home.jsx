@@ -11,6 +11,7 @@ export default function Home({ user }) {
             <main className="main-content">
                 <h1>Welkom, {displayName}! 👋</h1>
                 <p>Fijn dat je bent ingelogd.</p>
+                <p>More is coming soon...</p>
             </main>
         </div>
     )
