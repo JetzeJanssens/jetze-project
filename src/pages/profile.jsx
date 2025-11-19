@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { supabase } from "../supabaseClient"
-import Sidebar from "../components/Sidebar"
+import Sidebar from "../components/sidebar"
 import "../style/home.css"
 
 export default function Profile({ user }) {
