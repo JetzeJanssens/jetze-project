@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { supabase } from "./supabaseClient"
-import "./Home.css"
+import "./home.css"
 
 export default function Home({ user }) {
     const [displayName, setDisplayName] = useState(user.user_metadata?.display_name || "")

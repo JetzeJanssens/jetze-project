@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { supabase } from "./supabaseClient"
-import "./Login.css"
+import "./login.css"
 
 export default function Login({ onLogin, showRegister }) {
     const [email, setEmail] = useState("")
