@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import { supabase } from "./supabaseClient"
-import login from "./login"
-import register from "./register"
-import home from "./home"
+import Login from "./login.jsx"
+import Register from "./register.jsx"
+import Home from "./home.jsx"
 import "./App.css"
 
 function App() {
@@ -21,12 +21,12 @@ function App() {
         return () => listener.subscription.unsubscribe()
     }, [])
 
-    if (user) return <home user={user} />
+    if (user) return <Home user={user} />
 
     return showRegister ? (
-        <register onRegister={() => setShowRegister(false)} />
+        <Register onRegister={() => setShowRegister(false)} />
     ) : (
-        <login onLogin={setUser} showRegister={() => setShowRegister(true)} />
+        <Login onLogin={setUser} showRegister={() => setShowRegister(true)} />
     )
 }
 
