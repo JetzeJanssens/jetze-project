@@ -1,6 +1,7 @@
 import { useState } from "react"
-import { supabase } from "./supabaseClient"
-import "./register.css"
+import { supabase } from "../supabaseClient.js"
+import "../style/register.css"
+import {Link} from "react-router-dom";
 
 export default function Register({ onRegister }) {
     const [email, setEmail] = useState("")
@@ -42,6 +43,11 @@ export default function Register({ onRegister }) {
                 <button onClick={handleRegister} disabled={loading}>
                     {loading ? "Even wachten..." : "Registreren"}
                 </button>
+                <p>Al een account?{" "}
+                <Link to="/login" className="link">
+                    Inloggen
+                </Link>
+                </p>
             </div>
         </div>
     )

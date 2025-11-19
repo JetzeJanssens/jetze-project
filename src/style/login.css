@@ -1,0 +1,127 @@
+/* Basisinstellingen */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    width: 100%;
+    background: linear-gradient(135deg, #667eea, #764ba2); /* moderne gradient achtergrond */
+}
+
+/* Login container – horizontaal + verticaal centreren */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+/* Login box */
+.login-box {
+    background: #ffffffee; /* iets transparant wit */
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 360px;
+    max-width: 90%;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.login-box h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/* Inputs */
+.login-box input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin: 0.6rem 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.login-box input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+/* Buttons */
+.login-box button {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    background: #667eea;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.login-box button:hover {
+    background: #5563d6;
+    transform: translateY(-2px);
+}
+
+.login-box button:disabled {
+    background: #a3b0f0;
+    cursor: not-allowed;
+}
+
+/* Links */
+.login-box p {
+    margin-top: 1.2rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.login-box .link {
+    color: #667eea;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.login-box .link:hover {
+    color: #5563d6;
+}
+
+/* Error messages */
+.error-message {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border-radius: 8px;
+    padding: 0.6rem;
+    margin: 0.6rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+    margin: -50px;
+
+}
