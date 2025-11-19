@@ -7,7 +7,7 @@ import Register from "./pages/register"
 import Home from "./pages/home"
 import Profile from "./pages/profile"
 
-import "./app.css"
+import "./App.css"
 
 export default function App() {
     const [user, setUser] = useState(null)
