@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import { supabase } from "./supabaseClient"
-import Login from "./login.jsx"
-import Register from "./register.jsx"
-import Home from "./home.jsx"
+import Login from "./Login.jsx"
+import Register from "./Register.jsx"
+import Home from "./Home.jsx"
 import "./App.css"
 
 function App() {
