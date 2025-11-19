@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "../style/sidebar.css"
 import logo from "../assets/GenebosFM.png"
 import {supabase} from "../supabaseClient.js";

@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { supabase } from "./supabaseClient"
 
-import Login from "./pages/Login"
-import Register from "./pages/Register"
-import Home from "./pages/Home"
-import Profile from "./pages/Profile"
+import Login from "./pages/login"
+import Register from "./pages/register"
+import Home from "./pages/home"
+import Profile from "./pages/profile"
 
 import "./app.css"
 
