@@ -25,7 +25,7 @@ export default function Login({ onLogin, showRegister }) {
         <div className="login-container">
             <div className="login-box">
                 <h2>Login</h2>
-                <h3>TEST 2</h3>
+                <h3>TEST 23</h3>
                 <input
                     type="email"
                     placeholder="Email"
