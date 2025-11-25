@@ -2,7 +2,7 @@ import { useState } from "react"
 import {Link} from "react-router-dom"
 import { supabase } from "../supabaseClient.js"
 import "../style/login.css"
-import logo from "../assets/GenebosFM.png"
+import logo from "../assets/ZVKLogo.png"
 
 
 export default function Login({ onLogin, showRegister }) {

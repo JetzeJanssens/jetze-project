@@ -6,6 +6,7 @@ import Login from "./pages/login"
 import Register from "./pages/register"
 import Home from "./pages/home"
 import Profile from "./pages/profile"
+import Players from "./pages/players"
 
 import "./App.css"
 
@@ -45,6 +46,7 @@ export default function App() {
                     <>
                         <Route path="/app" element={<Home user={user} />} />
                         <Route path="/app/profile" element={<Profile user={user} />} />
+                        <Route path="/app/players" element={<Players />} />
                         <Route path="*" element={<Navigate to="/app" replace />} />
                     </>
                 )}

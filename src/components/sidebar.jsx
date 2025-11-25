@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom"
-import "../style/sidebar.css"
-import logo from "../assets/GenebosFM.png"
+import { NavLink } from "react-router-dom";
+import "../style/sidebar.css";
+import logo from "../assets/ZVKLogo.png";
 import {supabase} from "../supabaseClient.js";
 
 
@@ -19,7 +19,7 @@ export default function Sidebar() {
                     <li>
                         <NavLink
                             to="/app"
-                            end // belangrijk voor index routes!
+                            end
                             className={({ isActive }) => (isActive ? "nav-item active" : "nav-item")}
                         >
                             Home
@@ -36,9 +36,20 @@ export default function Sidebar() {
                             Profile
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink
+                            to="/app/players"
+                            className={({ isActive }) =>
+                                isActive ? "nav-item active" : "nav-item"
+                            }
+                        >
+                            Spelers
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
             <button onClick={signOut}>Uitloggen</button>
+
             <p className="version">Version: 0.0.1</p>
         </aside>
     )
